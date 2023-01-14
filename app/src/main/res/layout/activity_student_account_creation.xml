@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/CreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#30ff"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="CREATE ACCOUNT AS A STUDENT"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewName"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/CreateAccount"
+            />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:hint="Enter Your Name"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/TextViewName"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewUserName"
+            android:layout_marginTop="20dp"
+            android:text="User Name"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/Name"
+            />
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:hint="Enter Your Username"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/TextViewUserName"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewEmail"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/UserName"
+            />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:hint="Enter Your Email"
+            android:padding="20dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/TextViewEmail"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewPhoneNumber"
+            android:layout_marginTop="20dp"
+            android:text="Phone Number"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/Email"
+            />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:hint="Enter Your Phone Number"
+            android:padding="20dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/TextViewPhoneNumber"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewPassword"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/phoneNumber"
+            />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/TextViewPassword"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewSession"
+            android:layout_marginTop="20dp"
+            android:text="Session"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/Password"
+            />
+
+        <EditText
+            android:id="@+id/Session"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:hint="Enter Your Session"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/TextViewSession"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewStudentID"
+            android:layout_marginTop="20dp"
+            android:text="Student ID"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/Session"
+            />
+
+        <EditText
+            android:id="@+id/StudentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:hint="Enter Your Student ID"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/TextViewStudentID"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/yearDropDownLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StudentId"
+            android:hint="Year">
+
+            <AutoCompleteTextView
+                android:id="@+id/yearDropDownTextView"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/semesterDropDownLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yearDropDownLayout"
+            android:hint="Semester">
+
+            <AutoCompleteTextView
+                android:id="@+id/semesterDropDownTextView"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/deptDropDownLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/semesterDropDownLayout"
+            android:hint="Department">
+
+            <AutoCompleteTextView
+                android:id="@+id/deptDropDownTextView"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/signUpBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@+id/deptDropDownLayout"
+            android:text="Register"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</ScrollView>

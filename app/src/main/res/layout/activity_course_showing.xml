@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+<!--    <TextView-->
+<!--        android:id="@+id/DepartmentTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Department: CSE"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/CourseTitleTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Course Title: Software Engineering"-->
+<!--        android:textSize="12dp"-->
+<!--        android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/CourseCodeTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Course Code: CSE2210"-->
+<!--        android:textSize="12dp"-->
+<!--        android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/CourseCreditTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Credit: 1.5"-->
+<!--        android:textSize="12dp"-->
+<!--        android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/CourseTypeTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Course Type: Lab"-->
+<!--        android:textSize="12dp"-->
+<!--        android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/YearTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Year: 2nd"-->
+<!--        android:textSize="12dp"-->
+<!--        android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/SemesterTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Semester: 2nd"-->
+<!--        android:textSize="12dp"-->
+<!--        android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>-->
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/drawable-v24/white_background.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/drawable/table_background.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_admin_account_creation.xml" value="0.16" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_admin_pannel.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_assign_marks.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_assign_marks2.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_assign_marks_list_view.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_before_routine.xml" value="0.16" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_course_distribution.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_course_distribution_showing.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_course_showing.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_course_showing_recycler_view.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_edit_profile_admin.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_edit_profile_student.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_genarate_routine2.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_generate_routine.xml" value="0.144" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_item_course.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_item_course_distribution.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_item_teacher.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_profile_admin.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_profile_student.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_profile_teacher.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_show_course_distribution.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_show_courses.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_show_marks.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_show_marks2.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_show_notice.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_student_account_creation.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_student_pannel.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_student_show_courses.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_table.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_teacher_pannel.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_upload_notice_admin.xml" value="0.16" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/activity_upload_notice_teacher.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/item_assign_marks.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/item_course_distribution.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/items_list.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/items_list1.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/nav_header.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/layout/table_layout.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SmartClassRoutineFinalInterface/app/src/main/res/menu/teachericonmenu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:id="@+id/tpmenu_home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        />
+
+    <item android:id="@+id/tp_menu_profile"
+        android:icon="@drawable/ic_baseline_create_24"
+        android:title="Profile"/>
+
+    <item android:id="@+id/tpmenu_routine"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="Routine"/>
+
+    <item android:id="@+id/tpmenu_UploadNotice"
+        android:icon="@drawable/ic_baseline_cloud_upload_24"
+        android:title="Upload Notice"/>
+    <item android:id="@+id/tpmenu_AssignMark"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="Assign Mark"/>
+    <item android:id="@+id/tpmenu_ShowCourseDistribution"
+        android:icon="@drawable/show_course"
+        android:title="Show Course Distribution"/>
+    <item  android:id="@+id/tpmenu_logout"
+        android:icon="@drawable/logout"
+        android:title="Log Out"
+        />
+</menu>

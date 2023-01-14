@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartclassroutinefinalinterface">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/routine_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/routine_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartClassRoutineFinalInterface">
+        <activity
+            android:name=".StudentShowCourses"
+            android:exported="false" />
+        <activity
+            android:name=".item_course_distribution"
+            android:exported="false" />
+        <activity
+            android:name=".CourseDistributionShowingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowNotice"
+            android:exported="false" />
+        <activity
+            android:name=".GenarateRoutine2"
+            android:exported="false" />
+        <activity
+            android:name=".Assign_Marks_ListView"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".UploadNoticeAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".UploadNoticeTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".AssignMarks"
+            android:exported="false" />
+        <activity
+            android:name=".AssignMarks2"
+            android:exported="false" />
+        <activity
+            android:name=".ShowMarks"
+            android:exported="false" />
+        <activity
+            android:name=".ShowMarks2"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileStudent"
+            android:exported="false" />
+        <activity
+            android:name=".TableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileStudent"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".CourseShowingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherShowingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowCourses"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateRoutine"
+            android:exported="false" />
+        <activity
+            android:name=".ShowCourseDistribution"
+            android:exported="false" />
+        <activity
+            android:name=".ShowTeachers"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".CourseDistribution"
+            android:exported="false"
+            android:label="@string/title_activity_course_distribution" />
+        <activity
+            android:name=".BeforeRoutine"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAccountCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherAccountCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAccountCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmergencyUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRequest"
+            android:exported="false" />
+        <activity
+            android:name=".StudentPannel"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherPannel"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNewAccount"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPannel"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".AddTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".AddCourse"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateRoutine"
+            android:exported="false" />
+        <activity
+            android:name=".CreateRoutine"
+            android:exported="false" />
+        <activity
+            android:name=".Routine"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

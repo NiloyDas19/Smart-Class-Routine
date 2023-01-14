@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:id="@+id/student_menu_home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        />
+
+    <item android:id="@+id/student_menu_profile"
+        android:icon="@drawable/student_request"
+        android:title="Profile"/>
+
+    <item android:id="@+id/student_menu_routine"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="Routine"/>
+
+    <item android:id="@+id/student_menu_Notices"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Notices"/>
+    <item android:id="@+id/student_menu_ShowMarks"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="Show Marks"/>
+
+    <item  android:id="@+id/student_menu_logout"
+        android:icon="@drawable/logout"
+        android:title="Log Out"
+        />
+</menu>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE ACCOUNT AS AN ADMIN"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="#30ff"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="20dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/CreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE ACCOUNT AS AN ADMIN"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="#30ff"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="20dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewName"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/CreateAccount"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:background="@color/white"
+            android:hint="Enter Your Name"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:textColorHint="@color/black"
+            android:padding="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@+id/TextViewName"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewUserName"
+            android:layout_marginTop="20dp"
+            android:text="User Name"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/Name"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userName"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:hint="Enter Your User Name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@id/TextViewUserName"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewAdminID"
+            android:layout_marginTop="20dp"
+            android:text="Admin ID"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/userName"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminID"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:hint="Enter Admin ID"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/TextViewAdminID"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewEmail"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/adminID"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:hint="Enter Your Email"
+            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@id/TextViewEmail"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewPassword"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/Email"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:hint="Enter Your Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:layout_below="@id/TextViewPassword"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewPhoneNumber"
+            android:layout_marginTop="20dp"
+            android:text="Phone Number"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/password"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNumber"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:hint="Enter Your Phone number"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_below="@+id/TextViewPhoneNumber"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/deptDropDownLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+            android:layout_below="@+id/phoneNumber"
+            android:hint="Select Department">
+
+            <AutoCompleteTextView
+                android:id="@+id/deptDropDownTextView"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/deptDropDownLayout"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:text="Register"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+</ScrollView>

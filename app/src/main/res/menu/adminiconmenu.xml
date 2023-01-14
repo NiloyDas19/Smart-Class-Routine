@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item  android:id="@+id/menu_home"
+            android:icon="@drawable/home"
+            android:title="Home"
+            />
+
+        <item android:id="@+id/menu_profile"
+            android:icon="@drawable/student_request"
+            android:title="Profile"/>
+
+        <item android:id="@+id/menu_routine"
+            android:icon="@drawable/ic_baseline_access_time_24"
+            android:title="Routine"/>
+
+        <item android:id="@+id/menu_add_teacher"
+            android:icon="@drawable/ic_baseline_add_circle_outline_24"
+            android:title="Add Teacher"/>
+
+        <item android:id="@+id/menu_add_course"
+            android:icon="@drawable/ic_baseline_add_24"
+            android:title="Add Course"/>
+
+        <item android:id="@+id/menu_course_distribution"
+            android:icon="@drawable/show_course"
+            android:title="Course Distribution"/>
+
+        <item android:id="@+id/menu_show_courses"
+            android:icon="@drawable/show_course"
+            android:title="Show Courses"/>
+
+        <item android:id="@+id/menu_show_teachers"
+            android:icon="@drawable/student_request"
+            android:title="Show Teachers" />
+
+        <item android:id="@+id/menu_show_course_distribution"
+            android:icon="@drawable/distribution"
+            android:title="Show Course Distribution"/>
+        <item android:id="@+id/menu_UploadNotice"
+            android:icon="@drawable/ic_baseline_cloud_upload_24"
+            android:title="Upload Notice"/>
+        <item android:id="@+id/menu_generate_routine"
+            android:icon="@drawable/time"
+            android:title="Generate Routine"/>
+        <item  android:id="@+id/menu_logout"
+            android:icon="@drawable/logout"
+            android:title="Log Out"
+            />
+
+</menu>
