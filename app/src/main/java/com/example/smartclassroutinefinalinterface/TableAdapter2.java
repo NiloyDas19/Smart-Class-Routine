@@ -1,22 +1,33 @@
 package com.example.smartclassroutinefinalinterface;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.os.Build;
+import android.print.PrintDocumentAdapter;
+import android.print.PrintManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.print.PrintHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.smartclassroutinefinalinterface.weekdays.DomainRow;
 
 import java.util.List;
 
+import de.codecrafters.tableview.TableView;
+
 
 public class TableAdapter2 extends RecyclerView.Adapter<TableAdapter2.Viewholder> {
     List<List<DomainRow>> list;
     Context context;
+
 
     public TableAdapter2(Context context, List<List<DomainRow>> list) {
         this.list = list;
@@ -39,6 +50,7 @@ public class TableAdapter2 extends RecyclerView.Adapter<TableAdapter2.Viewholder
     public void onBindViewHolder(@NonNull Viewholder holder, int pos) {
 
         holder.ViewDay.setText(getDay(pos+1));
+        if (pos==4)     holder.print.setVisibility(View.VISIBLE);
 
         holder._11.setText(list.get(pos).get(0)._1);
         holder._12.setText(list.get(pos).get(0)._2);
@@ -80,6 +92,19 @@ public class TableAdapter2 extends RecyclerView.Adapter<TableAdapter2.Viewholder
         holder._48.setText(list.get(pos).get(3)._8);
         holder._49.setText(list.get(pos).get(3)._9);
 
+        holder.print.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                View v = holder.tableView;
+                Bitmap bmp = Bitmap.createBitmap(v.getWidth(), v.getHeight(), Bitmap.Config.ARGB_8888);
+                Canvas c = new Canvas(bmp);
+                v.draw(c);
+                PrintHelper photoPrinter = new PrintHelper(context);
+                photoPrinter.setScaleMode(PrintHelper.SCALE_MODE_FIT);
+                photoPrinter.printBitmap("Routine", bmp);
+            }
+        });
+
     }
 
     public String getDay(int i){
@@ -107,11 +132,16 @@ public class TableAdapter2 extends RecyclerView.Adapter<TableAdapter2.Viewholder
 
         TextView ViewDay;
 
+        Button print ;
+        TableLayout tableView;
+
 
         public Viewholder(@NonNull View itemView) {
             super(itemView);
 
             ViewDay = itemView.findViewById(R.id.dayfind);
+            print = itemView.findViewById(R.id.print);
+            tableView = itemView.findViewById(R.id.tableLayout);
 
             //row 1
             _11 = itemView.findViewById(R.id.r11);
@@ -159,4 +189,14 @@ public class TableAdapter2 extends RecyclerView.Adapter<TableAdapter2.Viewholder
 
         }
     }
+
+    //void printHelper(View view){
+//        PrintManager printManager = (PrintManager) context.getSystemService(context.PRINT_SERVICE);
+//        PrintDocumentAdapter printDocumentAdapter = null;
+//        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.KITKAT){
+//            printDocumentAdapter =
+//        }
+
+
+    //}
 }

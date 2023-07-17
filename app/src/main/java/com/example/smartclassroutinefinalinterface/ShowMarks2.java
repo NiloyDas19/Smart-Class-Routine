@@ -77,9 +77,24 @@ public class ShowMarks2 extends AppCompatActivity {
         student.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                markStr = snapshot.child(code+type+number).getValue().toString();
-                if (markStr != null)
-                    mark.setText(markStr);
+                if (number.equals("Final") || type.equals("Lab")){
+                    double marks = 0;
+                    int cnt=0;
+                    for (DataSnapshot dataSnapshot: snapshot.getChildren()){
+                        if (dataSnapshot.getKey().contains(type)){
+                            cnt++;
+                            marks += Double.parseDouble(dataSnapshot.getValue().toString());
+                        }
+                    }
+                    marks = marks/(cnt*1.00);
+
+                    mark.setText(Double.toString(marks));
+                }
+                else if (snapshot.child(code+type+number).exists()) {
+                    markStr = snapshot.child(code + type + number).getValue().toString();
+                    if (markStr != null)
+                        mark.setText(markStr);
+                }
             }
 
             @Override

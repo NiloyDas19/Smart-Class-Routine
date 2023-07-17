@@ -32,14 +32,17 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class EditProfileAdmin extends AppCompatActivity {
 
     EditText name,phone,presentAddress,permanentAddress;
     Button update;
-    ImageView profilePic;
+    CircleImageView profilePic;
     String Name,Dept,ID,Phone;
     Uri imageUri;
     DatabaseReference userTable, adminTable;
+    DatabaseReference profilePics;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +66,7 @@ public class EditProfileAdmin extends AppCompatActivity {
         String currentUID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         userTable = FirebaseDatabase.getInstance().getReference().child("Users").child(currentUID);
         adminTable = FirebaseDatabase.getInstance().getReference().child("Admins").child(Dept).child(ID);
+        profilePics = FirebaseDatabase.getInstance().getReference().child("ProfilePics");
 
         profilePic.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,7 +134,8 @@ public class EditProfileAdmin extends AppCompatActivity {
     }
 
     void uploadImage(){
-        final StorageReference filePath = FirebaseStorage.getInstance().getReference().child("ProfilePics").child(ID);
+        String currentUser = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        final StorageReference filePath = FirebaseStorage.getInstance().getReference().child("ProfilePics").child(currentUser);
         Bitmap bitmap = null;
 
         try {
@@ -159,8 +164,8 @@ public class EditProfileAdmin extends AppCompatActivity {
                         @Override
                         public void onSuccess(Uri uri) {
                             String imageUrl = uri.toString();
-                            userTable.child("profilePicUrl").setValue(imageUrl);
-                            adminTable.child("profilePicUrl").setValue(imageUrl);
+                            String currentUser = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                            profilePics.child(currentUser).child("url").setValue(imageUrl);
                             finish();
                         }
                     });

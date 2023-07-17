@@ -17,13 +17,16 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfileStudent extends AppCompatActivity {
 
     TextView name,dept,email,phone,id,presentAddress,permanentAddress,userName,fatherName,motherName,session;
-    ImageView profilePic;
+    CircleImageView profilePic;
     FirebaseDatabase firebaseDatabase;
-    DatabaseReference databaseReference;
+    DatabaseReference databaseReference,pp;
     String currentUser;
     Button editProfile;
     static String Name,Dept,Phone,ID;
@@ -50,6 +53,22 @@ public class ProfileStudent extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         currentUser = FirebaseAuth.getInstance().getCurrentUser().getUid();
         databaseReference = firebaseDatabase.getReference().child("Users").child(currentUser);
+
+        pp = FirebaseDatabase.getInstance().getReference().child("ProfilePics");
+        pp.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.child(currentUser).exists()){
+                    String url = snapshot.child(currentUser).child("url").getValue().toString();
+                    Picasso.with(getApplicationContext()).load(url).into(profilePic);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override

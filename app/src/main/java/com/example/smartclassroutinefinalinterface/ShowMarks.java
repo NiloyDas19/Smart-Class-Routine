@@ -61,7 +61,7 @@ public class ShowMarks extends AppCompatActivity {
 
 
         String[] allType = {"CT","Assignment","Presentation","Lab","Viva"};
-        String[] allTypeNumbers = {"1","2","3","4","5","6","7","8","9","10"};
+        String[] allTypeNumbers = {"Final","1","2","3","4","5","6","7","8","9","10"};
 
         ArrayAdapter<String> allTypeAdapter = new ArrayAdapter<>(ShowMarks.this,R.layout.items_list,allType);
         ArrayAdapter<String> allTypeNumbersAdapter = new ArrayAdapter<>(ShowMarks.this,R.layout.items_list,allTypeNumbers);

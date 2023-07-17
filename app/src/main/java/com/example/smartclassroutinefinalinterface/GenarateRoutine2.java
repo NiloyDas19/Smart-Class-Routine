@@ -95,7 +95,9 @@ public class GenarateRoutine2 extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 List<DistributionClass> courseInformations = new ArrayList<>();
                 for (DataSnapshot snapshot1: snapshot.getChildren()){
+                    Log.i("aaa",snapshot1.getKey());
                     for (DataSnapshot dataSnapshot: snapshot1.child(semester).getChildren()){
+                        Log.i("aaa",dataSnapshot.getKey());
                         DistributionClass cd = dataSnapshot.getValue(DistributionClass.class);
                         courseInformations.add(cd);
                     }
@@ -125,6 +127,9 @@ public class GenarateRoutine2 extends AppCompatActivity {
                 }
             }
         }
+
+
+
 
 
         Random random = new Random();
@@ -180,9 +185,12 @@ public class GenarateRoutine2 extends AppCompatActivity {
         for (int i=0;i<5;i++){
             for (int j=0;j<8;j++){
                 for (int k=0;k<4;k++){
+                    //Log.i("aaa",routine[i][j][k][1]);
+
                     String year = getYear(k);
                     String day = getDay(i+1);
                     String time = getTime(j+1);
+                    //Log.i("aaa",year+day+time);
                     DatabaseReference df = FirebaseDatabase.getInstance().getReference()
                             .child("Routine").child(dept).child(year)
                             .child(semester).child(day).child(time);
